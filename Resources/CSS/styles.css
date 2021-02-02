@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Monserrat', sans-serif;
+    background-color: lightsalmon;
+}
+
+nav {
+    background-color: teal;
+    color: lightsalmon;
+}
+
+.bar ul {
+    display: flex;
+
+    padding-top: 1rem;
+    padding-left: 1rem;
+    list-style-type: none;
+}
+
+.bar ul a {
+    text-decoration: none;
+    color: lightsalmon;
+}
+
+nav ul li {
+    margin-right: 2rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.intro {
+    height: 45rem;
+    background-image: url("C:/Users/Jordan/Desktop/Codecademy/Projects/Club%20House%20Home%20Screen/Resources/Photos/Ben.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: coral;
+    background-color: saddlebrown;
+    padding: 2rem;
+    width: 100%;
+}
+
+.summary {
+    margin: 4rem auto;
+    background-color: teal;
+    height: 15rem;
+    display: block;
+}
+
+.summary h2 {
+    color: yellow;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    padding-top: 1.5rem;
+}
+
+.summary p {
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.winter {
+    margin-left: 1rem;
+    font-style: italic;
+}
+
+.photos {
+    display: flex;
+    align-content: center;
+    
+}
+
+.photos img {
+    width: 30%;
+    margin: 1.5%
+}
+
+.testimonials {
+    color: yellow;
+    background-color: teal;
+    margin: 4rem auto;
+    height: 15rem;
+    padding-top: 1rem;
+}
+
+.testimonials h1 {
+    font-size: 2.5rem;
+    color: yellow;
+    padding: 0.5rem 1rem;
+}
+
+.testimonials p {
+    padding: 0.5rem 1rem;
+}
+
+.meetup {
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.meetup h1 {
+    padding: 1rem;
+    color: yellow;
+}
+
+@media only screen and (max-width: 1080px) {
+    .photos img {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .photos {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .bar ul {
+       display: block; 
+       text-align: center;
+    }
+
+    .intro {
+        max-height: 200px;
+        background-size: cover;
+    }
+    
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .testimonials h1 {
+        font-size: 1.75rem;
+    }
+}
